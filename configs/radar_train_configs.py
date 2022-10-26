@@ -6,9 +6,9 @@ import argparse
 
 def configs():
     parser = argparse.ArgumentParser(description='MAU_train')
-    parser.add_argument('--data_train_path', type=str, default='data/')
-    parser.add_argument('--data_val_path', type=str, default='data/')
-    parser.add_argument('--data_test_path', type=str, default='data/')
+    parser.add_argument('--data_train_path', type=str, default='../data/')
+    parser.add_argument('--data_val_path', type=str, default='../data/')
+    parser.add_argument('--data_test_path', type=str, default='../data/')
     parser.add_argument('--pretrained_model', type=str, default='')
     parser.add_argument('--is_training', type=str, default='True')
     parser.add_argument('--device', type=str, default='cuda:1')
